@@ -9,6 +9,7 @@ public class Dolgozat02Main {
 		FajlKezeles fajl = new FajlKezeles();
 		try {
 			Ujsag[] ujsagok= fajl.fajlbolOlvas("ujsagok.csv","-");
+			//System.out.println("Sikeres fájlbeolvasás"); //kimaradt, visszajelzés a felhasználónak
 			//4.Feladat
 			System.out.println("Hetilapok:");
 			muveletek.kilistaz(ujsagok, "Hetilap");

@@ -13,7 +13,7 @@ public class Napilap extends Ujsag {
 	}
 
 	public void setHetiMegjelenesekSzama(int hetiMegjelenesekSzama) {
-		if (hetiMegjelenesekSzama >= 4) {
+		if (hetiMegjelenesekSzama >= 4) { // && hetiMegjelenesekSzama <= 7, kimaradt
 			this.hetiMegjelenesekSzama = hetiMegjelenesekSzama;
 		} else {
 			throw new NumberFormatException("Napilapnak legalább négyszer kell megjelennie egy héten!");

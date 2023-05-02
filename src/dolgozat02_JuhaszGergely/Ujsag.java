@@ -22,7 +22,7 @@ public class Ujsag {
 		return nev;
 	}
 	public void setNev(String nev) throws UresNevKivetelException {
-		if (!nev.isEmpty() && nev != null ) {
+		if (!nev.isEmpty() && nev != null ) { // jobb fordítva, így lehet egy felesleges vizsgálat, null értékre vizsgálat legyen az első
 			this.nev = nev;	
 		}else {
 			throw new UresNevKivetelException("Az újság neve nem lehet üres!");

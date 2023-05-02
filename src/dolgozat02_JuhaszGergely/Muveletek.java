@@ -43,7 +43,7 @@ public class Muveletek {
 				legdragabb = i;
 			}
 		}
-		System.out.println("A legdrágább újság neve: " + ujsagok[legdragabb].getNev() + ", ÁFA tartalma: " + ujsagok[legdragabb].afaTartalomSzami(ujsagok[legdragabb].getAr()) +"Forint" );
+		System.out.println("A legdrágább újság neve: " + ujsagok[legdragabb].getNev() + ", ÁFA tartalma: " + ujsagok[legdragabb].afaTartalomSzami(ujsagok[legdragabb].getAr()) +"Forint" ); // ár paraméter nélkül is működik! Ki kell venni a metódusnál is! 
 	}
 	
 	public void elsoNapilap(Ujsag[] ujsagok, String keresettUjsag) {
@@ -53,7 +53,7 @@ public class Muveletek {
 			 i++;
 		 }
 		 if (i == ujsagok.length ) {
-			System.out.println("Nincs keresett újságtípus!");
+			System.out.println("Nincs keresett újságtípus!"); // fordítva kell majd csinálni, if ágban legyen a kiiratás, else-ben a "nincs keresett újság"
 		}else {
 			
 			napilapObj = (Napilap) ujsagok[i];

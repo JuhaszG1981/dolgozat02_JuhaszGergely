@@ -27,7 +27,7 @@ public class FajlKezeles {
 			}else {
 				Ujsag ujsagObj = new HetiLap(csvSor[0], csvSor[1], csvSor[2], Integer.parseInt(csvSor[3]), Integer.parseInt(csvSor[4]));
 				ujsagok[i] = ujsagObj;
-			}
+			} // itt most jó volt az if else, de a bővíthetőség mjiatt a switch-case jobb lenne
 			
 		}
 		return ujsagok;
